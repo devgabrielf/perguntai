@@ -1,0 +1,39 @@
+.button {
+    height: 5rem;
+    border-radius: .8rem;
+    font-weight: 500;
+    background: var(--orange);
+    color: var(--white);
+    padding: 0 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: filter 0.1s;
+
+    img {
+        margin-right: 8px;
+    }
+
+    &.outlined {
+        background: #fff;
+        color: var(--orange);
+    }
+
+    &:not(:disabled):hover {
+        filter: brightness(1.1);
+    }
+
+    &:not(:disabled):active {
+        filter: brightness(.9);
+    }
+
+    &:disabled {
+        opacity: .6;
+        cursor: default;
+    }
+}

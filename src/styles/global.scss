@@ -1,0 +1,56 @@
+:root {
+    --orange: #FF6300;
+    --light-orange: #ff8940;
+    --white: #e6e6e6;
+    --black: #1a1a1a;
+    --dark-grey: #313131;
+    --grey: #6d6d6d;
+    --red: #ea4335;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--orange);
+    color: #29292e;
+}
+
+body, input, button, textarea {
+    font: 400 1.6rem 'Roboto', sans-serif;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+button {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+  }
+
+::-webkit-scrollbar-thumb {
+background: #b64702;
+border-radius: .4rem;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}

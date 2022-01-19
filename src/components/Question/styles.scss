@@ -1,0 +1,127 @@
+.question {
+    background: var(--white);
+    word-break: break-word;
+
+    p {
+        color: var(--black);
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.4rem;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            img {
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius: 50%;
+            }
+
+            span {
+                color: var(--grey);
+                font-size: 1.4rem;
+
+                & + span {
+                    font-size: 1rem;
+                }
+            }
+
+            .show-comments {
+                margin-left: 1rem;
+
+                > button {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    background: transparent;
+                    border: 0;
+                    color: var(--orange);
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    cursor: pointer;
+        
+                    .arrow-up {
+                        width: 0; 
+                        height: 0; 
+                        border-left: .6rem solid transparent;
+                        border-right: .6rem solid transparent;
+                        
+                        border-bottom: .6rem solid var(--orange);
+                        }
+        
+                    .arrow-down {
+                        width: 0; 
+                        height: 0; 
+                        border-left: .6rem solid transparent;
+                        border-right: .6rem solid transparent;
+                        
+                        border-top: .6rem solid var(--orange);
+                        }
+                }
+            }
+        }
+
+        .question-buttons {
+            display: flex;
+            align-items: flex-start;
+            gap: .8rem;
+        }
+
+        button {
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            transition: filter 0.2s;
+
+            &.like-button {
+                display: flex;
+                align-items: flex-end;
+                color: var(--grey);
+                gap: .8rem;
+            }
+
+            &.marked {
+                color: var(--orange);
+
+                svg path {
+                    stroke: var(--orange);
+                }
+            }
+
+            &:hover {
+                filter: brightness(0.75);
+            }
+        }
+    }
+
+    &.answer {
+        margin-left: 3rem;
+        padding: 2.4rem 0 2.4rem 2.4rem;
+        border-left: .1rem solid var(--orange);
+        border-bottom: .1rem solid var(--orange);
+        border-radius: 0 0 0 .8rem;
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        footer {
+            .user-info {
+                img {
+                    width: 2.6rem;
+                    height: 2.6rem;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: .8rem;
+        }
+    }
+}

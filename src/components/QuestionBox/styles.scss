@@ -1,0 +1,17 @@
+.question-box {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: .8rem;
+    padding: 2.4rem 2.4rem 1.6rem 2.4rem;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    
+    form {
+        border: .1rem solid var(--orange);
+        margin-left: 3rem;
+    }
+}
